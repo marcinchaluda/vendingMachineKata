@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vending Machine</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="module" src="../App.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="banner">
+            <h1 class="banner__title">Vending Machine</h1>
+        </header>
+        <div class="machine">
+            <p class="machine__message"></p>
+            <div class="machine__product">
+                <label for="product_name" class="machine__product-name-label">Product Name: </label>
+                <p id="product_name" class="machine__product-name"></p>
+                <label for="product-price" class="machine__product-price-label">Price: </label>
+                <p id="product-price" class="machine__product-price"></p><span>$</span>
+                <label for="amount-to-pay-label" class="machine__amount-to-pay-label">Amount to pay: </label>
+                <p id="amount-to-pay-label" class="machine__amount"></p><span>$</span>
+            </div>
+            <div class="machine__buttons">
+                <div class="machine__product-list">
+                    <div class="machine__item"><img src="./images/drink_small.png" alt="drink can" data-name="drink"></div>
+                    <div class="machine__item"><img src="./images/chips_small.png" alt="bag of chips" data-name="chips"></div>
+                    <div class="machine__item"><img src="./images/sweets_small.png" alt="sweets" data-name="candy"></div>
+                </div>
+                <div class="machine__coin-input">
+                    <label for="machine__coin" class="machine__coin-label">Insert coin: </label>
+                    <input id="machine__coin" type="text" class="machine__coin">
+                    <button class="machine__pay">Pay</button>
+                    <button class="machine__cancel">Cancel</button>
+                    <div class="machine__change">
+                        <label for="machine__change" class="machine__change-label">Change: </label>
+                        <p id="machine__change" type="text" class="machine__change-coins">
+                    </div>
+                </div>
+            </div>
+            <div class="machine__bin">
+                <label for="purchase-item" class="machine__purchase-bin-label">Items purchased</label>
+                <p id="purchase-item" class="machine__purchase-bin"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
